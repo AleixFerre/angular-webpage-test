@@ -1,0 +1,13 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let contact of contacts">
+    <mat-expansion-panel-header> {{ contact.name }} | {{ contact.id }} </mat-expansion-panel-header>
+    <p>Phone: {{ contact.phone }}</p>
+    <p>Secondary Phone: {{ contact.secphone }}</p>
+    <p>Email: {{ contact.email }}</p>
+    <p>Notes: {{ contact.notes }}</p>
+    <mat-action-row>
+      <a mat-button color="primary" [routerLink]="['/edit', contact.id]">EDIT</a>
+      <button mat-button color="warn" (click)="onDelete(contact.id)">DELETE</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
