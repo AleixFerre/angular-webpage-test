@@ -1,0 +1,7 @@
+<app-panel
+  *ngFor="let info of infoList; let i = index"
+  class="feature"
+  [direction]="i % 2 === 0 ? 'right' : 'left'"
+  [info]="info"
+  [isLast]="i === infoList.length - 1"
+></app-panel>

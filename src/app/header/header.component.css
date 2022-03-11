@@ -1,14 +1,40 @@
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.container {
+  --width: calc(100vw - 20px);
+  --aspect-ratio: 2.41;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+.banner {
+  z-index: 2;
+  width: var(--width);
+  pointer-events: none;
 }
 
-.spacer {
-  flex: 1 1 auto;
+.mascara {
+  position: absolute;
+  top: calc(var(--width) / var(--aspect-ratio));
+  left: 0;
+  object-fit: cover;
+  object-position: right top;
+  height: 0px;
+  width: var(--width);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.degradat {
+  position: absolute;
+  top: calc(var(--width) / var(--aspect-ratio));
+  left: 0;
+  width: var(--width);
+  z-index: 10;
+  top: 0;
+  pointer-events: none;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--width);
+  pointer-events: none;
 }

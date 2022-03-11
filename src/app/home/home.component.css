@@ -1,0 +1,23 @@
+.header {
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  z-index: 2;
+  background-image: url('/assets/png/background.png');
+  background-size: contain;
+}
+
+.divider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #243950;
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
