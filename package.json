@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
+    "deploy": "ng build --prod --base-href=https://aleixferre.github.io/angular-webpage-test/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

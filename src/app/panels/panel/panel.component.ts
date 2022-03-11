@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Info } from 'src/app/core/info.model';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-panel',
@@ -13,5 +14,9 @@ export class PanelComponent implements OnInit {
   @Input() direction: 'left' | 'right' = 'left';
   @Input() info!: Info;
 
-  ngOnInit(): void {}
+  root: string = '';
+
+  ngOnInit(): void {
+    this.root = environment.root;
+  }
 }
