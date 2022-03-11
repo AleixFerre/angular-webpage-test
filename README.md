@@ -15,7 +15,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run
 
 ```sh
-ng deploy --base-href=https://aleixferre.github.io/angular-webpage-test/
+ng deploy --base-href=https://aleixferre.github.io/catabot-v2-dev/
 ```
 
 to build the project. The build artifacts will be stored in the `dist/` directory.
