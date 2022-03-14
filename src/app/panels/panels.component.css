@@ -1,8 +1,7 @@
 .feature {
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 100px;
+  margin-top: 5rem;
   width: 70%;
-  height: 400px;
   display: flex;
 }

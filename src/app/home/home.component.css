@@ -3,9 +3,9 @@
 }
 
 .content {
-  position: absolute;
+  position: relative;
+  width: 100vw;
   z-index: 2;
-  background-size: contain;
 }
 
 .divider {

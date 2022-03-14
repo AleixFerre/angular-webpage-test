@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Info } from 'src/app/core/info.model';
+import { Info } from 'src/app/core/models/info.model';
 
 @Component({
   selector: 'app-panel',

@@ -1,7 +1,9 @@
 <app-header class="header"></app-header>
-<div class="content" [ngStyle]="{ backgroundImage: 'url(' + root + '/assets/png/background.png)' }">
+<div [ngStyle]="{ backgroundImage: 'url(' + root + '/assets/png/background.png)' }">
+  <app-home-buttons></app-home-buttons>
   <app-statistics></app-statistics>
   <mat-divider class="divider"></mat-divider>
   <app-panels></app-panels>
+  <app-last-invite></app-last-invite>
   <app-footer></app-footer>
 </div>

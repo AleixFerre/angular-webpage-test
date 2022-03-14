@@ -39,6 +39,9 @@ import { PanelComponent } from './panels/panel/panel.component';
 import { PanelsComponent } from './panels/panels.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { NgxScrollTopModule } from 'ngx-scrolltop';
+import { HomeButtonsComponent } from './home-buttons/home-buttons.component';
+import { LastInviteComponent } from './last-invite/last-invite.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,8 @@ import { HeaderComponent } from './header/header.component';
     PanelComponent,
     FooterComponent,
     HeaderComponent,
+    HomeButtonsComponent,
+    LastInviteComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,6 +88,7 @@ import { HeaderComponent } from './header/header.component';
     MatPaginatorModule,
     MatSliderModule,
     MatExpansionModule,
+    NgxScrollTopModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
