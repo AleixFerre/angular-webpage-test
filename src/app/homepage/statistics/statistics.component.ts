@@ -5,7 +5,7 @@ import { StatsService } from '../../core/stats.service';
 @Component({
   selector: 'app-statistics',
   templateUrl: './statistics.component.html',
-  styleUrls: ['./statistics.component.css'],
+  styleUrls: ['./statistics.component.scss'],
 })
 export class StatisticsComponent implements OnInit {
   stats: Stat[] = [];

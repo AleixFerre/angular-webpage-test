@@ -4,7 +4,7 @@ import { Info } from 'src/app/core/models/info.model';
 @Component({
   selector: 'app-panel',
   templateUrl: './panel.component.html',
-  styleUrls: ['./panel.component.css'],
+  styleUrls: ['./panel.component.scss'],
 })
 export class PanelComponent implements OnInit {
   constructor() {}
