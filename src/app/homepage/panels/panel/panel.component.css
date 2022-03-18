@@ -6,15 +6,15 @@
 }
 
 .flex {
+  --margin: 10%;
   display: flex;
   align-items: center;
+  margin-left: calc(var(--margin));
+  margin-right: calc(var(--margin));
 }
 
 .content {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
 }
 
 .content-right {
@@ -39,17 +39,26 @@
   margin-right: 20%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1030px) {
   .flex {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     height: fit-content;
   }
 
   .img {
-    display: block;
-    margin-top: 30px;
+    display: none;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .description {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .content-right {
@@ -57,7 +66,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-bottom: 0px;
+    margin-right: 0px;
   }
 
   .content {
@@ -65,6 +74,10 @@
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+
+  .discord-widget {
+    margin-top: 5%;
   }
 }

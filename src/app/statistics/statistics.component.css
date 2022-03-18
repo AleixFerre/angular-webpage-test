@@ -19,3 +19,10 @@
 .category {
   font-weight: lighter;
 }
+
+@media screen and (max-width: 720px) {
+  .number {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}

@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './homepage/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-  },
-  {
-    path: 'error',
-    component: ErrorComponent,
   },
   {
     // 404 error page

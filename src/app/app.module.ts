@@ -15,7 +15,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatExpansionModule } from '@angular/material/expansion';
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './homepage/home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -35,13 +35,13 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSortModule } from '@angular/material/sort';
 import { ParallaxDirective } from './core/parallax.directive';
 import { StatisticsComponent } from './statistics/statistics.component';
-import { PanelComponent } from './panels/panel/panel.component';
-import { PanelsComponent } from './panels/panels.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { PanelComponent } from './homepage/panels/panel/panel.component';
+import { PanelsComponent } from './homepage/panels/panels.component';
+import { FooterComponent } from './homepage/footer/footer.component';
+import { HeaderComponent } from './homepage/header/header.component';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
-import { HomeButtonsComponent } from './home-buttons/home-buttons.component';
-import { LastInviteComponent } from './last-invite/last-invite.component';
+import { LastInviteComponent } from './homepage/last-invite/last-invite.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -54,8 +54,8 @@ import { LastInviteComponent } from './last-invite/last-invite.component';
     PanelComponent,
     FooterComponent,
     HeaderComponent,
-    HomeButtonsComponent,
     LastInviteComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,

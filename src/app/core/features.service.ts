@@ -30,7 +30,7 @@ export class FeaturesService {
       title: 'MODERACIÓ',
       description:
         "Si ets administrador del servidor, el CataBOT t'ofereix una gran diversitat de comandes de moderació! Es pot banejar a qui es necessiti, el mateix amb el kick. Inclús té una comanda per esborrar fins a 100 missatges!",
-      icon: 'kick',
+      icon: 'pokedex',
     },
     {
       title: 'SERVIDOR OFICIAL',
