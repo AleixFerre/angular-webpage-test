@@ -1,19 +1,19 @@
 <mat-toolbar class="toolbar">
   <div class="button-container">
-    <a mat-button (click)="backToTop()">
-      <img src="assets/banner/logo.png" alt="Logo" class="logo" />
-      <span class="title">CataBOT</span>
+    <a mat-button (click)="backToTop()" >
+      <img src="assets/banner/logo.png" alt="CataBOT Logo" class="logo" />
+      <mat-label class="title">CataBOT</mat-label>
     </a>
     <div class="button">
       <button mat-button [routerLink]="'commands'">
-        <mat-icon class="icon"> fact_check </mat-icon>
-        <span class="icon-title">Comandes</span>
+        <mat-icon class="icon"> dashboard </mat-icon>
+        <mat-label class="icon-title">Comandes</mat-label>
       </button>
     </div>
     <div class="button">
       <a mat-button href="https://discord.gg/6Qy4rdReSE" target="_blank">
         <mat-icon class="icon"> group </mat-icon>
-        <span class="icon-title">Servidor Oficial</span>
+        <mat-label class="icon-title">Servidor Oficial</mat-label>
       </a>
     </div>
     <a
@@ -22,7 +22,7 @@
       href="https://discord.com/oauth2/authorize?client_id=529787494510624768&permissions=8&scope=bot"
       target="_blank"
     >
-      <span>Convida al CataBOT</span>
+      <mat-label>Convida al CataBOT</mat-label>
     </a>
   </div>
 </mat-toolbar>

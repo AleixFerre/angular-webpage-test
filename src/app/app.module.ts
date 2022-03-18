@@ -34,7 +34,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSortModule } from '@angular/material/sort';
 import { ParallaxDirective } from './core/parallax.directive';
-import { StatisticsComponent } from './statistics/statistics.component';
+import { StatisticsComponent } from './homepage/statistics/statistics.component';
 import { PanelComponent } from './homepage/panels/panel/panel.component';
 import { PanelsComponent } from './homepage/panels/panels.component';
 import { FooterComponent } from './homepage/footer/footer.component';
