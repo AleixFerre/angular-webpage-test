@@ -15,6 +15,12 @@
   height: 35px;
 }
 
+.active {
+  background: radial-gradient(circle, #111a2585, #00000085);
+  color: white;
+  text-emphasis-color: white;
+}
+
 .icon {
   margin-right: 10px;
 }
@@ -53,10 +59,16 @@
     display: none;
   }
 
+  .button {
+    padding: 0;
+    width: 40px;
+  }
+
   .icon {
     border: firebrick solid 2px;
     color: white;
     padding: 6px;
+    margin: 0;
     border-radius: 50%;
   }
 
