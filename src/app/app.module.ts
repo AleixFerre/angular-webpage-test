@@ -42,6 +42,7 @@ import { HeaderComponent } from './homepage/header/header.component';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { LastInviteComponent } from './homepage/last-invite/last-invite.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { CommandsComponent } from './commands-page/commands/commands.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     HeaderComponent,
     LastInviteComponent,
     ToolbarComponent,
+    CommandsComponent,
   ],
   imports: [
     BrowserModule,

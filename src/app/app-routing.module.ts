@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CommandsComponent } from './commands-page/commands/commands.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './homepage/home/home.component';
 
@@ -7,6 +8,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path: 'commands',
+    component: CommandsComponent,
   },
   {
     // 404 error page
