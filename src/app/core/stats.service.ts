@@ -22,7 +22,7 @@ export class StatsService {
 
   constructor() {}
 
-  getInfo(): Stat[] {
+  getStats(): Stat[] {
     return this.stats;
   }
 }

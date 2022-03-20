@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,12 +6,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./toolbar.component.scss'],
 })
 export class ToolbarComponent implements OnInit {
-  constructor(private route: Router) {}
+  constructor() {}
 
   ngOnInit(): void {}
 
   backToTop() {
-    if (this.route.url === '/') window.scrollTo(0, 0);
-    else this.route.navigate(['/']);
+    window.scrollTo(0, 0);
   }
 }

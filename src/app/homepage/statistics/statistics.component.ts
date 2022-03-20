@@ -13,6 +13,6 @@ export class StatisticsComponent implements OnInit {
   constructor(private statsService: StatsService) {}
 
   ngOnInit(): void {
-    this.stats = this.statsService.getInfo();
+    this.stats = this.statsService.getStats();
   }
 }

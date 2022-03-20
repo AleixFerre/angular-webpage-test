@@ -1,0 +1,18 @@
+<mat-expansion-panel hideToggle>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ command.name }}
+    </mat-panel-title>
+    <mat-panel-description>
+      {{ command.description }}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <h2>Us</h2>
+  <p>{{ command.usage }}</p>
+  <h2>Tipus</h2>
+  <p>{{ command.type }}</p>
+  <div *ngIf="aliases">
+    <h2>Alias</h2>
+    <p>{{ aliases }}</p>
+  </div>
+</mat-expansion-panel>

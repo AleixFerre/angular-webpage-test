@@ -43,6 +43,7 @@ import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { LastInviteComponent } from './homepage/last-invite/last-invite.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CommandsComponent } from './commands-page/commands/commands.component';
+import { CommandComponent } from './commands-page/commands/command/command.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { CommandsComponent } from './commands-page/commands/commands.component';
     LastInviteComponent,
     ToolbarComponent,
     CommandsComponent,
+    CommandComponent,
   ],
   imports: [
     BrowserModule,

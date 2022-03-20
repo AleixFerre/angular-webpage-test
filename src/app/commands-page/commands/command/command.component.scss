@@ -1,0 +1,11 @@
+// ========== Align headers ==========
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+  flex-basis: 0;
+  display: inline-block; /* for inline elements e.g. span, strong, em etc */
+  text-overflow: ellipsis;
+  width: calc(80%); /* The trick is here! */
+}
+
+// ========== Align headers ==========
