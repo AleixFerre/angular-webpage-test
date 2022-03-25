@@ -33,6 +33,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSortModule } from '@angular/material/sort';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { ParallaxDirective } from './core/parallax.directive';
 import { StatisticsComponent } from './homepage/statistics/statistics.component';
 import { PanelComponent } from './homepage/panels/panel/panel.component';
@@ -93,6 +94,7 @@ import { CommandComponent } from './commands-page/commands/command/command.compo
     MatSliderModule,
     MatExpansionModule,
     NgxScrollTopModule,
+    MatButtonToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

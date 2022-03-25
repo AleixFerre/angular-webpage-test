@@ -13,3 +13,32 @@
   font-size: 1.2em;
   margin-bottom: 2rem;
 }
+
+.rows {
+  display: flex;
+  flex-direction: row;
+}
+
+.filters-panel {
+  position: sticky;
+  align-self: flex-start;
+  top: 100px;
+  padding-right: 1rem;
+}
+
+.types-panel {
+  flex-direction: column;
+}
+
+.type {
+  margin-bottom: 0.5rem;
+  // background: linear-gradient(to bottom, #2a405a, #23364d85);
+}
+
+.type:last-child {
+  margin-bottom: 0;
+}
+
+.commands-panel {
+  flex: 1 auto;
+}
