@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 import { map, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Command, ServerCommand } from '../models/command.model';
@@ -14,18 +14,28 @@ const commandsLinkMock = 'assets/mock/commands.json'; // MOCK DATA
 export class CommandsService {
   private commandsLink = environment.production ? commandsLink : commandsLinkMock;
 
+  private cachedCommands: Command[] = [];
+
   constructor(private httpClient: HttpClient, private sanitizer: DomSanitizer) {}
 
   getCommands(): Observable<Command[]> {
+    if (this.cachedCommands.length > 0) {
+      return new Observable(observer => {
+        observer.next(this.cachedCommands);
+        observer.complete();
+      });
+    }
     return this.httpClient.get<ServerCommand[]>(this.commandsLink).pipe(
-      map((commands: ServerCommand[]) =>
-        commands
+      map((commands: ServerCommand[]) => {
+        const c = commands
           .map(c => this.fixCommand(c))
           .sort((a, b) => {
             // Sort by name alphabetically
             return a.name.localeCompare(b.name);
-          })
-      )
+          });
+        this.cachedCommands = c;
+        return c;
+      })
     );
   }
 
