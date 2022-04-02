@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CommandsService } from 'src/app/core/commands.service';
+import { CommandsService } from 'src/app/core/services/commands.service';
 import { Command } from 'src/app/core/models/command.model';
+import { Utils } from 'src/app/core/utils/utils';
+import { MatButtonToggleChange } from '@angular/material/button-toggle';
 
 const ALL_TYPES = 'Tots';
 
@@ -12,7 +14,7 @@ const ALL_TYPES = 'Tots';
 export class CommandsComponent implements OnInit {
   commands: Command[] = [];
   types: string[] = [];
-  filteredTypes = this.types;
+  filteredCommands: Command[] = [];
 
   selectedType: string = ALL_TYPES;
 
@@ -23,13 +25,9 @@ export class CommandsComponent implements OnInit {
   ngOnInit(): void {
     this.commandsService.getCommands().subscribe(c => {
       this.commands = c;
+      this.filteredCommands = this.commands;
 
-      const typesSet = new Set<string>();
-      this.commands.forEach(command => {
-        typesSet.add(this.firstCapital(command.type));
-      });
-
-      this.types = Array.from(typesSet).sort((a, b) => a.localeCompare(b));
+      this.types = [...new Set(this.commands.map(c => Utils.firstCapital(c.type)))].sort((a, b) => a.localeCompare(b));
 
       this.types.unshift(ALL_TYPES); // Add 'Tots' to the beginning of the array
 
@@ -37,16 +35,12 @@ export class CommandsComponent implements OnInit {
     });
   }
 
-  private firstCapital(type: string): string {
-    return type.charAt(0).toUpperCase() + type.slice(1);
-  }
-
-  onTypeChange(type: string): void {
-    if (type === ALL_TYPES) {
-      this.filteredTypes = this.types; // Show all types
+  onTypeChange(event: MatButtonToggleChange): void {
+    this.selectedType = event.value;
+    if (this.selectedType === ALL_TYPES) {
+      this.filteredCommands = this.commands; // Show all types
     } else {
-      this.selectedType = type;
-      this.filteredTypes = this.types.filter(t => t === type);
+      this.filteredCommands = this.commands.filter(c => c.type.toLowerCase() === this.selectedType.toLowerCase());
     }
   }
 }

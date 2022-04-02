@@ -1,4 +1,4 @@
 export interface Stat {
-  name: string;
+  displayName: string;
   value: number;
 }

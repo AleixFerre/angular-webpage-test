@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Info } from 'src/app/core/models/info.model';
+import { Feature } from 'src/app/core/models/feature.model';
 
 @Component({
   selector: 'app-panel',
@@ -11,7 +11,7 @@ export class PanelComponent implements OnInit {
 
   @Input() isLast: boolean = false;
   @Input() direction: 'left' | 'right' = 'left';
-  @Input() info!: Info;
+  @Input() info!: Feature;
 
   ngOnInit(): void {}
 }

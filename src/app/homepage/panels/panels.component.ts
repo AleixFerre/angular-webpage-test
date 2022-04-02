@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FeaturesService } from '../../core/features.service';
-import { Info } from '../../core/models/info.model';
+import { FeaturesService } from '../../core/services/features.service';
+import { Feature } from '../../core/models/feature.model';
 
 @Component({
   selector: 'app-panels',
@@ -8,11 +8,13 @@ import { Info } from '../../core/models/info.model';
   styleUrls: ['./panels.component.scss'],
 })
 export class PanelsComponent implements OnInit {
-  infoList: Info[] = [];
+  featuresList: Feature[] = [];
 
   constructor(private featuresService: FeaturesService) {}
 
   ngOnInit(): void {
-    this.infoList = this.featuresService.getInfo();
+    this.featuresService.getFeatures().subscribe(features => {
+      this.featuresList = features;
+    });
   }
 }

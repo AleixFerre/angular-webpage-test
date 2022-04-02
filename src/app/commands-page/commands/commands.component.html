@@ -9,14 +9,14 @@
   <ng-template #commandsPanel>
     <div class="rows">
       <div class="filters-panel">
-        <mat-button-toggle-group #group="matButtonToggleGroup" class="types-panel">
-          <mat-button-toggle *ngFor="let type of types" class="type" value="Tots">
+        <mat-button-toggle-group #group="matButtonToggleGroup" class="types-panel" (change)="onTypeChange($event)">
+          <mat-button-toggle *ngFor="let type of types" class="type" [value]="type">
             {{ type }}
           </mat-button-toggle>
         </mat-button-toggle-group>
       </div>
       <mat-accordion class="commands-panel">
-        <app-command *ngFor="let command of commands" [command]="command" class="command"></app-command>
+        <app-command *ngFor="let command of filteredCommands" [command]="command" class="command"></app-command>
       </mat-accordion>
     </div>
   </ng-template>

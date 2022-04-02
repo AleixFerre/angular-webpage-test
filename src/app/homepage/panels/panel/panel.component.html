@@ -9,7 +9,7 @@
     class="discord-widget"
     sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
   ></iframe>
-  <img *ngIf="!isLast" src="assets/png/{{ info.icon }}.png" class="img" />
+  <img *ngIf="!isLast" src="assets/png/{{ info.image }}.png" class="img" />
   <div class="content">
     <h1 class="title">{{ info.title }}</h1>
     <p class="description">
@@ -33,9 +33,9 @@
       height="400"
       allowtransparency="true"
       frameborder="0"
-    class="discord-widget"
+      class="discord-widget"
       sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
     ></iframe>
-    <img *ngIf="!isLast" src="assets/png/{{ info.icon }}.png" class="img" />
+    <img *ngIf="!isLast" src="assets/png/{{ info.image }}.png" class="img" />
   </div>
 </ng-template>

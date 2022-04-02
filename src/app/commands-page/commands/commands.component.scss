@@ -32,11 +32,23 @@
 
 .type {
   margin-bottom: 0.5rem;
-  // background: linear-gradient(to bottom, #2a405a, #23364d85);
 }
 
 .type:last-child {
   margin-bottom: 0;
+}
+
+.mat-button-toggle-appearance-standard {
+  min-width: 150px;
+  background: linear-gradient(to bottom, #2a405a, #23364d85);
+  color: white;
+  font-weight: lighter;
+}
+
+.mat-button-toggle-checked {
+  background: linear-gradient(to bottom, #141e2b, #111a2585);
+  color: white;
+  font-weight: bold;
 }
 
 .commands-panel {
