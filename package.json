@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
+    "start-prod": "ng serve -o --configuration production --port 4201",
     "build": "ng build --prod --base-href=/catabot-v2-dev/",
     "deploy": "ng build --prod",
     "watch": "ng build --watch --configuration development",

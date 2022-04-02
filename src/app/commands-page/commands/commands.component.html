@@ -9,7 +9,12 @@
   <ng-template #commandsPanel>
     <div class="rows">
       <div class="filters-panel">
-        <mat-button-toggle-group #group="matButtonToggleGroup" class="types-panel" (change)="onTypeChange($event)">
+        <mat-button-toggle-group
+          #group="matButtonToggleGroup"
+          class="types-panel"
+          (change)="onTypeChange($event)"
+          value="Tots"
+        >
           <mat-button-toggle *ngFor="let type of types" class="type" [value]="type">
             {{ type }}
           </mat-button-toggle>
