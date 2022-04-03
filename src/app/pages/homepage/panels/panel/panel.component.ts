@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Feature } from 'src/app/core/models/feature.model';
+import { Feature } from '@core/models/feature.model';
 
 @Component({
   selector: 'app-panel',

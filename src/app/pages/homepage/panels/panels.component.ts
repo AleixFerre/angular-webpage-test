@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FeaturesService } from '../../core/services/features.service';
-import { Feature } from '../../core/models/feature.model';
+import { Feature } from '@core/models/feature.model';
+import { FeaturesService } from '@core/services/features.service';
 
 @Component({
   selector: 'app-panels',

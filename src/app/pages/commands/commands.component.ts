@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CommandsService } from 'src/app/core/services/commands.service';
-import { Command } from 'src/app/core/models/command.model';
-import { Utils } from 'src/app/core/utils/utils';
+import { CommandsService } from '@core/services/commands.service';
+import { Command } from '@core/models/command.model';
+import { Utils } from '@core/utils/utils';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 
 const ALL_TYPES = 'Tots';
