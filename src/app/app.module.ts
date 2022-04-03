@@ -45,6 +45,7 @@ import { LastInviteComponent } from './homepage/last-invite/last-invite.componen
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CommandsComponent } from './commands-page/commands/commands.component';
 import { CommandComponent } from './commands-page/commands/command/command.component';
+import { AnimateOnScrollModule } from './external/animate-on-scroll/animate-on-scroll.module';
 
 @NgModule({
   declarations: [
@@ -95,6 +96,7 @@ import { CommandComponent } from './commands-page/commands/command/command.compo
     MatExpansionModule,
     NgxScrollTopModule,
     MatButtonToggleModule,
+    AnimateOnScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
