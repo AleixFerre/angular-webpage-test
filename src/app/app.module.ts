@@ -15,8 +15,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatExpansionModule } from '@angular/material/expansion';
 
-import { HomeComponent } from './homepage/home/home.component';
-import { ErrorComponent } from './error/error.component';
+import { HomeComponent } from '@pages/homepage/home/home.component';
+import { ErrorComponent } from '@pages/error/error.component';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -34,17 +34,17 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSortModule } from '@angular/material/sort';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { ParallaxDirective } from './core/directives/parallax.directive';
-import { StatisticsComponent } from './homepage/statistics/statistics.component';
-import { PanelComponent } from './homepage/panels/panel/panel.component';
-import { PanelsComponent } from './homepage/panels/panels.component';
-import { FooterComponent } from './homepage/footer/footer.component';
-import { HeaderComponent } from './homepage/header/header.component';
+import { ParallaxDirective } from '@core/directives/parallax.directive';
+import { StatisticsComponent } from '@pages/homepage/statistics/statistics.component';
+import { PanelComponent } from '@pages/homepage/panels/panel/panel.component';
+import { PanelsComponent } from '@pages/homepage/panels/panels.component';
+import { FooterComponent } from '@pages/homepage/footer/footer.component';
+import { HeaderComponent } from '@pages/homepage/header/header.component';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
-import { LastInviteComponent } from './homepage/last-invite/last-invite.component';
+import { LastInviteComponent } from '@pages/homepage/last-invite/last-invite.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { CommandsComponent } from './commands-page/commands/commands.component';
-import { CommandComponent } from './commands-page/commands/command/command.component';
+import { CommandsComponent } from '@pages/commands/commands.component';
+import { CommandComponent } from '@pages/commands/command/command.component';
 import { AnimateOnScrollModule } from './external/animate-on-scroll/animate-on-scroll.module';
 
 @NgModule({
