@@ -5,7 +5,7 @@ import { map, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Command, ServerCommand } from '../models/command.model';
 
-const commandsLink = 'https://raw.githubusercontent.com/AleixFerre/CataBot/main/docs/Storage/commands.json';
+const commandsLink = 'https://raw.githubusercontent.com/AleixFerre/CataBot/main/storage/commands.json';
 const commandsLinkMock = 'assets/mock/commands.json'; // MOCK DATA
 
 @Injectable({
