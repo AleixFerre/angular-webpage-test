@@ -12,13 +12,21 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build & Deploy
 
-Run
+### Deploy on develop server:
 
 ```sh
-ng deploy --base-href=https://aleixferre.github.io/catabot-v2-dev/
+ng deploy --configuration dev --base-href=https://aleixferre.github.io/catabot-v2-dev/
 ```
 
-to build the project. The build artifacts will be stored in the `dist/` directory.
+### Deploy to production server:
+
+```sh
+ng build --configuration production --base-href=https://aleixferre.github.io/CataBot/
+```
+
+- Copy and replace all the files on the `dist/catabot-webpage` folder to the root of the repository **CataBot@gh-pages**.
+
+- Push the changes to the repository.
 
 ## Running unit tests
 

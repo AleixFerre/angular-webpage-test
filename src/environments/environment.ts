@@ -7,7 +7,7 @@ export const environment = {
   production: false,
   root: '',
   api: {
-    stats: magicAPILink + '/stats',
-    commands: magicAPILink + '/commands',
+    stats: `${magicAPILink}/stats`,
+    commands: `${magicAPILink}/commands`,
   },
 };
