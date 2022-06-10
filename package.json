@@ -3,11 +3,20 @@
   "version": "0.1.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o",
-    "build": "ng build --prod --base-href=/catabot-v2-dev/",
-    "deploy": "ng build --prod",
+    "start": "ng serve",
+    "start-o": "ng serve -o",
+    "start-prod": "ng serve -o --configuration production --port 4201",
+    "build": "ng build --base-href=/catabot-v2-dev/",
+    "build-prod": "ng build --base-href=https://aleixferre.github.io/CataBot/ --output-path=dist/prod/",
+    "deploy": "ng build --base-href=/catabot-v2-dev/",
+    "d": "ng deploy --base-href=https://aleixferre.github.io/catabot-v2-dev/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:check"
+    }
   },
   "private": true,
   "dependencies": {
@@ -33,12 +42,15 @@
     "@angular/compiler-cli": "~13.2.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "husky": "^7.0.4",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
     "typescript": "~4.5.2"
   }
 }

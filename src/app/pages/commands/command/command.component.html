@@ -1,0 +1,15 @@
+<mat-expansion-panel hideToggle class="expansion-panel">
+  <mat-expansion-panel-header>
+    <mat-panel-title class="title">
+      {{ command.name }}
+    </mat-panel-title>
+    <mat-panel-description class="description" [innerHTML]="command.description"> </mat-panel-description>
+  </mat-expansion-panel-header>
+  <p class="content-title">Format d'ús</p>
+  <h2 class="content">{{ command.usage }}</h2>
+  <div *ngIf="aliases">
+    <p class="content-title">Alies</p>
+    <h2 class="content">{{ aliases }}</h2>
+  </div>
+</mat-expansion-panel>
+<div class="divider"></div>

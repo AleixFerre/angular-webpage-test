@@ -1,0 +1,30 @@
+<div class="container">
+  <h1 class="title">Comandes</h1>
+  <h3 class="description">
+    Aquí està tota la informació en detall sobre l'extensa llista de comandes que hi ha disponibles al CataBOT.
+  </h3>
+
+  <mat-progress-bar *ngIf="isLoading; else commandsPanel" mode="indeterminate" color="warn"></mat-progress-bar>
+
+  <ng-template #commandsPanel>
+    <div class="rows">
+      <div class="filters-panel">
+        <mat-button-toggle-group
+          #group="matButtonToggleGroup"
+          class="types-panel"
+          (change)="onTypeChange($event)"
+          value="Tots"
+        >
+          <mat-button-toggle *ngFor="let type of types" class="type" [value]="type">
+            {{ type }}
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <mat-accordion class="commands-panel">
+        <app-command *ngFor="let command of filteredCommands" [command]="command" class="command"></app-command>
+      </mat-accordion>
+    </div>
+  </ng-template>
+</div>
+
+<app-footer></app-footer>

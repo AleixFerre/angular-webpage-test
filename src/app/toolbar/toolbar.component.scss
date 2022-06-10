@@ -15,8 +15,14 @@
   height: 35px;
 }
 
+.active {
+  background: radial-gradient(circle, #111a2585, #00000085);
+  color: white;
+  text-emphasis-color: white;
+}
+
 .icon {
-  margin-right: 10px;
+  display: none;
 }
 
 .button-container {
@@ -24,11 +30,15 @@
   display: flex;
 }
 
-.button {
+.push-end {
   flex: 1 auto;
+}
+
+.button {
   text-align: center;
   color: white;
   transition: color 0.2s ease;
+  margin-left: 0.5rem;
 }
 
 .button:hover {
@@ -40,6 +50,7 @@
   border-radius: 10px;
   color: white;
   transition: 0.2s ease;
+  margin-left: 1rem;
 }
 
 .button-left:hover {
@@ -53,7 +64,13 @@
     display: none;
   }
 
+  .button {
+    padding: 0;
+    width: 40px;
+  }
+
   .icon {
+    display: block;
     border: firebrick solid 2px;
     color: white;
     padding: 6px;

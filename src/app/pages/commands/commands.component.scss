@@ -1,0 +1,57 @@
+.container {
+  margin: 50px 10% 40px 10%;
+  min-height: calc(100vh - 235px);
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.description {
+  font-weight: lighter;
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+}
+
+.filters-panel {
+  position: sticky;
+  align-self: flex-start;
+  top: 100px;
+  padding-right: 1rem;
+}
+
+.types-panel {
+  flex-direction: column;
+}
+
+.type {
+  margin-bottom: 0.5rem;
+}
+
+.type:last-child {
+  margin-bottom: 0;
+}
+
+.mat-button-toggle-appearance-standard {
+  min-width: 150px;
+  background: linear-gradient(to bottom, #2a405a, #23364d85);
+  color: white;
+  font-weight: lighter;
+}
+
+.mat-button-toggle-checked {
+  background: linear-gradient(to bottom, #141e2b, #111a2585);
+  color: white;
+  font-weight: bold;
+}
+
+.commands-panel {
+  flex: 1 auto;
+}
